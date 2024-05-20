@@ -145,52 +145,76 @@ nav a:hover{
     transform: scale(1.03);
 }
 
-.img-container img{
-    height: 80vh;
-    margin-right: 10vh;
-    margin-top: -15vh;
-    border-radius: 10px;
-    opacity: 0.5;
-    transition: .3s;
-}
-
-.img-container img:hover{
-    opacity: 0.8;
-    box-shadow: 0px 0px 20px #676767;
-}
-
 .container-section{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.btn-social{
+.header-agenda{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social-content{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 13%;
+    top: 36%;
+}
+
+.social-content span{
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 200px !important;
+}
+
+.neon{
+    text-shadow:
+    0 0 0.5rem #fff,
+    0 0 1rem #fff,
+    0 0 1.5rem #fff,
+    0 0 2.5rem #c55d6f,
+    0 0 4rem #c55d6f,
+    0 0 6rem #d62963,
+    0 0 9.5rem #d62963;
+}
+
+.btn-social{
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    margin-left: 12vh;
-    top: 5;
-    color: #d62963;
+    color: #b66471;
     font-size: 20px;
     display: inline-block;
     cursor: pointer;  
-    z-index: 999;
+    transition: .3s;
+    padding: 10px;
+    border: 2px solid #b66471;
+    border-radius: 8px;
 }
 
 .btn-social:hover{
-    text-shadow: 0px 0px 30px #dd1155;
-    transform: scale(1.03);
+    transform: scale(1.05);
+    color: #d62963;
+    border: 2px solid #d62963;
+    text-shadow: 0px 0px 10px #e7195d;
+    box-shadow: 0px 0px 10px #e7195d, inset 0 0 10px #e7195d;
 }
 
 .btn-lista{
-    border: 2px solid #1e1e1e;
-    background-color: #676767;
+    border: 2px solid #8596b4;
+    background-color: #1e1e1e;
     padding: 10px;
     border-radius: 8px;
     font-size: 20px;
-    color: #1e1e1e;
+    color: #7c889e;
     cursor: pointer;
     font-weight: 500;
     transition: .4s ease-in-out;
@@ -208,7 +232,13 @@ nav a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 30px 10px;
+}
+
+.container-main h2{
+    font-size: 40px;
+    color: #7c889e;
 }
 
 input[type=radio]{
@@ -291,7 +321,7 @@ label{
 #item1:checked ~ .cards #song1 img,
 #item2:checked ~ .cards #song2 img,
 #item3:checked ~ .cards #song3 img{
-   box-shadow: 0px 0px 5px 5px #a7a7a7;
+   box-shadow: 0px 0px 5px 5px #414040;
 }
 
 
