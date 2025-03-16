@@ -14,6 +14,122 @@ body{
     background-color: #1e1e1e;
 }
 
+/* Efeito Luz */
+
+@keyframes pulsar1 {
+    0% { 
+        transform: scale(1); 
+        
+    }  
+    50% { 
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #07cbf7;
+    
+    }
+    100%{
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #07cbf7;
+    }  
+  }  
+
+  @keyframes pulsar2 {
+    0%{
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 15px 5px #8596b4;
+    }
+    100%{
+        transform: scale(1.01);
+        box-shadow: 0px 10px 15px 5px #8596b4;
+    }
+  }
+
+  @keyframes pulsar3 {
+    0%{
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 15px 5px #c55d6f;
+    }
+    100% {
+        transform: scale(1.01);
+        box-shadow: 0px 10px 15px 5px #c55d6f; 
+    }
+  }
+
+  @keyframes pulsar4 {
+    0%{
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0px 10px 15px 5px #ec3e41;
+    }
+    100% {
+        transform: scale(1.01);
+        box-shadow: 0px 10px 15px 5px #ec3e41;
+    }
+  }
+
+  @keyframes pulsar5 {
+    0%{
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.01);
+      text-shadow: 0px 0px 20px #ff1a1a;
+    }
+
+  }
+
+  /* Efeito Contract  */
+
+  @keyframes contract1 {
+    0% { 
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #07cbf7;
+    }
+    100% { transform: scale(1); }
+}
+
+@keyframes contract2 {
+    0% { 
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #8596b4;
+    }
+    100% { transform: scale(1); }
+}
+
+@keyframes contract3 {
+    0% { 
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #c55d6f;
+    }
+    100% { transform: scale(1); }
+}
+
+@keyframes contract4 {
+    100% { 
+        transform: scale(1.01); 
+        box-shadow: 0px 10px 15px 5px #ec3e41;
+    }
+    0% { transform: scale(1); }
+}
+
+@keyframes contract5 {
+    100% { 
+        transform: scale(1.01); 
+        text-shadow: 0px 0px 20px #ff1a1a;
+        transition: ease-in;
+        
+    }
+    0%{ transform: scale(1); }
+}
+
+
 header nav{
 display: flex;
 align-items: center;
@@ -75,6 +191,9 @@ nav a:hover{
     margin-bottom: 8%;
     transition: .03s;
     border-left: none;
+    transition: .2s ease-in;
+    animation: pulsar1 2s ease-in-out forwards, contract1 2s ease-in-out forwards;
+    animation-delay: 0s, 2s;
 }
 
 .container-header:hover{
@@ -90,6 +209,9 @@ nav a:hover{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: none;
+    transition: .2s ease-in;
+    animation: pulsar2 2s ease-in-out forwards, contract2 2s ease-in-out forwards;
+    animation-delay: 0.2s, 2.2s;
 }
 
 .container-header-yellow:hover{
@@ -105,6 +227,9 @@ nav a:hover{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: none;
+    transition: .2s ease-in;
+    animation: pulsar3 2s ease-in-out forwards, contract3 2s ease-in-out forwards;
+    animation-delay: 0.4s, 2.4s;
 }
 
 .container-header-orange:hover{
@@ -120,6 +245,9 @@ nav a:hover{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-left: none;
+    transition: .3s ease-in;
+    animation: pulsar4 2s ease-in-out forwards, contract4 2s ease-in-out forwards;
+    animation-delay: 0.6s, 2.6s;
 }
 
 .container-header-pink:hover{
@@ -129,12 +257,15 @@ nav a:hover{
 
 .text-container{
     color: #ff3737;
-    font-size: 175px;
     margin-left: 25px;
+    font-size: 165px;
     margin-top: 60px;
     display: inline-block;
     transition: .3s;
     cursor: pointer;
+    transition: .2s ease-in-out;
+    animation: pulsar5 2s ease-in-out forwards infinite, contract5 2s ease-in-out forwards infinite;
+    animation-delay: 0.8s, 2.8s;
 }
 .text-container p{
     display: inline-block;
